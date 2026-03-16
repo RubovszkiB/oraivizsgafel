@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using ConsoleApp14;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -20,5 +21,10 @@ namespace Wpf_w4
         {
             InitializeComponent();
         }
-    }
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            Program.Beolvas();
+
+        }
+     }
 }

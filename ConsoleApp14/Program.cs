@@ -74,7 +74,7 @@ namespace ConsoleApp14
             }
         }
 
-        static void Beolvas()
+        public static void Beolvas()
         {
             StreamReader sr = new StreamReader("champions2017_V4.txt");
             sr.ReadLine();

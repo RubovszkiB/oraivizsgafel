@@ -5,21 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Wpf_w4"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="LOL hősök" Height="600" Width="900"
+    Loaded="Window_Loaded">
     <Grid>
         <Grid.RowDefinitions>
-
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="7*"/>
         </Grid.RowDefinitions>
-        <StackPanel Grid.Row="0" Orientation="Vertical" HorizontalAlignment="Center">
 
-            <ComboBox X:name="cmbTulajdonsag"  Width="150" Margin="10" />
-
-            <Button Content="Hozzáadás" Width="150" Margin="10" Click="btnHozzaadas_Click"/>
-            
+        <!-- Top controls: keep the pattern you started (ComboBox then two buttons) -->
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center" Margin="8">
+            <ComboBox x:Name="cmbTulajdonsag" Width="200" Margin="8" />
+            <Button Content="Reset" Width="100" Margin="8" Click="btnReset_Click"/>
+            <Button Content="Mentés" Width="100" Margin="8" Click="btnMentes_Click"/>
         </StackPanel>
-
+        <DataGrid x:dtgAdatok></DataGrid>
+        <!-- Main DataGrid area -->
+        
     </Grid>
-    
 </Window>
